@@ -1,0 +1,31 @@
+{# templates/unicard.html.twig #}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Process Amount</title>
+</head>
+<body style="background-color: #000000">
+<form action="{{ path('unicard_add_bonus') }}" method="post">
+    <button type="submit" style="
+    width: 200px;
+    height: 100px;
+    font-size: 29px;
+    border-radius: 20px;
+    background-color: transparent;
+    box-shadow: 0px 0px 67px 0px #ffffff;
+    border-inline: none;
+    color: brown;
+    font-weight: bold;
+    ">EXECUTE</button>
+
+    <pre style="
+    color: brown;
+    font-weight: bold;
+    font-size: 15px;
+    ">{{ output ?? '' }}</pre>
+
+</form>
+</body>
+</html>
